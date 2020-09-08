@@ -73,15 +73,11 @@ body {
     display: flex;
 }
 
-.aboutme {
-    height: 100vh;
-    margin:10px;
- 
-
-}
 .navbar {
     display: flex;
-    padding: 10px;
+    padding: 0;
+    width: 100%;
+    
 } 
 
 .logo{
@@ -138,3 +134,34 @@ body {
 
 }
 
+/*Media Query for Phones*/
+
+ @media (max-width: 600px) {
+
+    .navbar {
+        align-items: center;
+        justify-items: center;
+        gap: auto;
+    }
+    
+    .logo {
+        flex:0
+    }
+
+    li > p {
+        color: transparent;
+    }
+
+    .footer {
+        padding: 0px;
+        align-items: center;
+        justify-items: center;
+        gap: auto;
+    }
+
+    .freecodecamp {
+        padding-right: -50px;
+    }
+
+}
+  
